@@ -20,7 +20,7 @@ After installation you can access the functionalities through `import collie`.
 ## Overview
 
 There are two main ways to use COLLIE:
-1. Use the [COLLIE-v1 dataset](#collie-v1-dataset) to run your methods and compare to the ones reported in the paper;
+1. Use the [COLLIE-v1 dataset](#collie-v1-dataset) to run your methods and compare to the ones reported in the paper
 2. Use the [COLLIE framework](#collie-framework-for-dataset-construction) to construct new/customed/harder constraints
 
 

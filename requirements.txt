@@ -1,0 +1,5 @@
+google-generativeai
+openai
+aiolimiter
+rich
+fschat

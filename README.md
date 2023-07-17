@@ -18,9 +18,6 @@ pip install -e .
 After installation you can access the functionalities through `import collie`.
 
 ## Overview
-There are two main ways to use COLLIE:
-1. Use the [dataset we constructed](#dataset) to compare performance of your prompting/modeling methods to the ones reported in the paper
-2. Write your own constraints; make it harder, more compositional, etc to explore the limits of models and probe failure cases by following the steps in [COLLIE framework](#the-collie-framework)
 
 There are two main ways to use COLLIE:
 1. Use the [COLLIE-v1 dataset](#collie-v1-dataset) to run your methods and compare to the ones reported in the paper;

@@ -6,22 +6,28 @@ We propose the COLLIE framework for easy constraint structure specification, exa
 
 ## Install
 We recommand using Python 3.9 (3.10 as of now might have incompatabilty of certain dependencies). 
+Install from `pip`:
+```
+pip install collie-bench
+```
 
 To install in development mode (in cloned project directory):
-```bash
+```
 pip install -e .
 ```
 After installation you can access the functionalities through `import collie`.
-
-We will add COLLIE to PyPI soon.
 
 ## Overview
 There are two main ways to use COLLIE:
 1. Use the [dataset we constructed](#dataset) to compare performance of your prompting/modeling methods to the ones reported in the paper
 2. Write your own constraints; make it harder, more compositional, etc to explore the limits of models and probe failure cases by following the steps in [COLLIE framework](#the-collie-framework)
 
+There are two main ways to use COLLIE:
+1. Use the [COLLIE-v1 dataset](#collie-v1-dataset) to run your methods and compare to the ones reported in the paper;
+2. Use the [COLLIE framework](#collie-framework-for-dataset-construction) to construct new/customed/harder constraints
 
-## Dataset
+
+## COLLIE-v1 Dataset
 
 The dataset used in the paper is at `data/all_data.dill` and can be loaded by 
 ```python
@@ -47,7 +53,8 @@ Reproducing the results reported in the paper:
 - To run the models to reproduce the results, run `python scripts/run_api_models.py` and `python scripts/run_gpu_models.py`
 
 
-## The COLLIE Framework 
+## COLLIE Framework for Dataset Construction
+
 The framework follows a 4-step process:
 1. [Constraint Specification](#step-1-constraint-specification-complete-guide)
 2. [Extraction](#step-2-extraction-complete-guide)

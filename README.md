@@ -136,12 +136,13 @@ False
 lease cite our paper if you use SimCSE in your work:
 
 ```bibtex
-@inproceedings{yao2023collie,
-    title = {COLLIE: Systematic Construction of Constrained Text Generation Tasks},
-    author = {Yao, Shunyu and Chen, Howard and Wang, Austin and Yang, Runzhe and Narasimhan, Karthik},
-    booktitle = {ArXiv},
-    year = {2023},
-    html = {https://arxiv.org/abs/2307.08689}
+@misc{yao2023collie,
+      title={COLLIE: Systematic Construction of Constrained Text Generation Tasks}, 
+      author={Shunyu Yao and Howard Chen and Austin W. Hanjie and Runzhe Yang and Karthik Narasimhan},
+      year={2023},
+      eprint={2307.08689},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
 ```
 

@@ -115,7 +115,7 @@ To render a constraint, simply run:
 >>> from collie.constraint_renderer import ConstraintRenderer
 >>> renderer = ConstraintRenderer(
 >>>     constraint=c,  # Defined in step one
->>>     constraint_value=5
+>>>     check_value=5
 >>> )
 >>> print(renderer.prompt)
 Please generate a sentence with exactly 5 words.

@@ -2,22 +2,16 @@
 
 ![teaser](./teaser.png)
 
-We propose the COLLIE framework for easy constraint structure specification, example extraction, instruction rendering, and model evaluation.
-
-Paper: https://arxiv.org/abs/2307.08689
+We propose the COLLIE framework for easy constraint structure specification, example extraction, instruction rendering, and model evaluation. Paper: https://arxiv.org/abs/2307.08689.
 
 
 ## Install
 We recommand using Python 3.9 (3.10 as of now might have incompatabilty of certain dependencies). 
-Install from `pip`:
-```
-pip install collie-bench
-```
 
-To install in development mode (in cloned project directory):
-```
-pip install -e .
-```
+* Install from PyPI: `pip install collie-bench`
+
+* Install from repo in development mode: `pip install -e .`
+
 After installation you can access the functionalities through `import collie`.
 
 ## Overview
@@ -136,11 +130,11 @@ True
 False
 ```
 ## Citation
-lease cite our paper if you use SimCSE in your work:
+Please cite our paper if you use COLLIE in your work:
 
 ```bibtex
 @misc{yao2023collie,
-      title={COLLIE: Systematic Construction of Constrained Text Generation Tasks}, 
+      title={{COLLIE}: Systematic Construction of Constrained Text Generation Tasks}, 
       author={Shunyu Yao and Howard Chen and Austin W. Hanjie and Runzhe Yang and Karthik Narasimhan},
       year={2023},
       eprint={2307.08689},

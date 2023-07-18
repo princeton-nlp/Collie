@@ -141,7 +141,7 @@ lease cite our paper if you use SimCSE in your work:
     author = {Yao, Shunyu and Chen, Howard and Wang, Austin and Yang, Runzhe and Narasimhan, Karthik},
     booktitle = {ArXiv},
     year = {2023},
-    html = {}
+    html = {https://arxiv.org/abs/2307.08689}
 }
 ```
 

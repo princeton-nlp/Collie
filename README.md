@@ -88,10 +88,9 @@ Constraint(
     Reduction(None)
 )
 ```
-Note that if no `InputLevel` is provided when initializing the constraint, the input text will be viewed as a sentence without any splitting.
+Note that if no `InputLevel` is provided when initializing the constraint, the input text will be viewed as a sentence without any splitting. See [step 4](#step-4-evaluation) for how the constraint is used to compare a given text and a target value.
 
 Check out the [guide](docs/constraint_spec.md) to explore more examples.
-
 
 ### Step 2: Extraction ([Complete Guide](./docs/extraction.md))
 Once the constraints are defined, you can now extract examples from the datasources (e.g., Gutenberg, Wikipedia) that satisfy the specified constraints.

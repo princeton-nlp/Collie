@@ -88,6 +88,8 @@ Constraint(
     Reduction(None)
 )
 ```
+Note that if no `InputLevel` is provided when initializing the constraint, the input text will be viewed as a sentence without any splitting.
+
 Check out the [guide](docs/constraint_spec.md) to explore more examples.
 
 

@@ -4,6 +4,9 @@
 
 We propose the COLLIE framework for easy constraint structure specification, example extraction, instruction rendering, and model evaluation.
 
+Paper: https://arxiv.org/abs/2307.08689
+
+
 ## Install
 We recommand using Python 3.9 (3.10 as of now might have incompatabilty of certain dependencies). 
 Install from `pip`:

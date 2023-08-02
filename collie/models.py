@@ -13,7 +13,7 @@ from typing import Any, List, Dict, Union
 from tqdm.asyncio import tqdm_asyncio
 from tqdm import tqdm
 from google.api_core import retry, exceptions
-
+from litellm import completion
 
 
 # OpenAI GPT with ChatCompletion
@@ -167,9 +167,9 @@ def palm_llms(prompts, model="models/text-bison-001", temperature=0.7):
 
 # Overall
 def llms(prompts, model, temperature=0.7, max_tokens=1000, stop=None) -> list:
-    if model.startswith("gpt"):
-        return gpts(prompts, model=model, temperature=temperature, max_tokens=max_tokens, stop=stop)
-    elif model.startswith("palm"):
-        return palm_llms(prompts, model="models/text-bison-001", temperature=temperature)
+    messages_list = [[{"role": "user", "content": prompt}] for prompt in prompts]
+    if model.startswith("palm"):
+        model = "text-bison-001"
+    return completion(model=model, messages=messages_list, max_tokens=max_tokens, temperature=temperature, stop=stop)["choices"][0]["message"]["content"]
     else:
         raise ValueError("Invalid model name.", model)

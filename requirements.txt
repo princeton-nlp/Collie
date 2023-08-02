@@ -2,3 +2,4 @@ openai
 aiolimiter
 rich
 fschat
+litellm
